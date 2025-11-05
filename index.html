@@ -7,12 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="/favicon.ico">
 </head>
+
 <body class="from-gray-50 to-gray-100 min-h-screen">
-    <div class="mx-auto px-2 py-16 max-w-5xl fade-in flex flex-col gap-4">
+    <div class="mx-auto px-2 py-4 sm:py-16 max-w-5xl fade-in flex flex-col gap-4">
         <header class="flex flex-col gap-2">
-            <h1 class="font-bold text-gray-900 flex items-center flex-wrap gap-x-2">
+            <h1 class="font-bold text-gray-900 flex sm:items-center flex-col sm:flex-row gap-x-2">
                 <span class="text-2xl">Nikolai Maslak</span>
-                / Frontend Engineer
+                <div>
+                    <span class="hidden sm:inline">/</span>
+                    Frontend Engineer
+                </div>
             </h1>
 
             <div class="flex flex-wrap gap-x-4 gap-y-2 flex-col sm:flex-row sm:items-center">
@@ -39,13 +43,13 @@
             </div>
         </header>
 
-        <div class="flex gap-4 flex-wrap">
-            <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
+        <div class="flex gap-4 flex-wrap sm:flex-nowrap">
+            <p class="text-xl text-gray-600">
                 I’m a Senior Frontend Engineer with over seven years of experience turning ideas into clean, intuitive, and responsive web experiences.
                 While my main focus is frontend engineering, I often work across the stack — from crafting responsive interfaces to implementing backend APIs and integrations. Having that end-to-end perspective helps me build smoother, more coherent user experiences.
             </p>
 
-            <img src="photo.jpg" alt="Nikolai Maslak" class="w-48 h-48 object-cover rounded-lg shadow-sm self-start shadow-gray-200">
+            <img src="photo.jpg" alt="Nikolai Maslak" class="w-full sm:w-48 object-cover rounded-lg shadow-sm self-start shadow-gray-200">
         </div>
     </div>
 </body>
